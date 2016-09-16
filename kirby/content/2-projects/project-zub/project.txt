@@ -1,0 +1,14 @@
+Title: zuerichunbezahlbar.ch
+----
+
+Year: 2013
+
+----
+
+Tags: graphic
+
+----
+Teaser: Concept and Design for the Website
+----
+
+Text: [Zuerichunbezahlbar.ch](http://zuerichunbezahlbar.ch) is an interactive online city guide for Zurich which shows occasions in culture, sports and other leisure activities that can be done free of charge. Although being one of the most expensive cities in the world, a lot of events and offers are accessible for free, astonishingly. The platform provides a spectrum of all available events in the city, as well as space for publishing events if the user intends to organise one. The website is designed for everybody who wants to enjoy the city on a very low budget: It especially includes people with a low income and enhance their possibilities to experience and gain the most of out the city. The users are in the position to define the look of their published events by themselves by choosing from a given template structure.

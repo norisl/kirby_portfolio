@@ -1,0 +1,19 @@
+Title: Breathing Apparatus
+
+----
+
+Year: 2015
+
+----
+
+Tags: object
+
+----
+Teaser: Critical Design Approach about Desire in Future
+----
+
+Text: "Desires in a transparent world" explores the human desire in the context of an increase of the transparent world. How do people sate their desires by breaking down the digital barrier and feeling the closeness of another person? All of our personal data is publicly available: We share our heartbeats, blood pressure, our cholesterol levels, …etc. The "transparent self" is becoming a reality.
+
+The device’s appearance suggests something that is both machine and alive. It is unsettling and perverse, yet very alluring at the same time. This dichotomy reflects the nature of the device perfectly: It satisfies a deep and intimate longing in the user while simultaneously taking away something that could only be given personally so far: intimacy.
+
+Please see the full documentation [here](http://breathingapparatus.tumblr.com/tagged/device)

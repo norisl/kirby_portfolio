@@ -1,0 +1,14 @@
+Title: Sonic Playground
+----
+
+Year: 2014
+
+----
+
+Tags: object
+
+----
+Teaser: Conceptual project rethinking children playground
+----
+
+Text: A conceptual thinking space about how a playground nowadays can be extended and adapted. The concept works with the available objects on the playground. Through sound, we thought of building a connection and evoking an auditive level of interaction between the children playing on the different elements. The low-fidelity prototype is a visualisation of the sound interaction between the plates and a swing. While the plates are build to jump on from one to another and play music, the swing can be used to alter the sound made by the plates. The children can each play by themselves and synchronously create a new soundscape with each other. From this point, the concept can be applied and expanded on multiple items on the playground. This would be a new way of exploring and experiencing a playground in cognitive and social manner.
