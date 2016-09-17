@@ -6,10 +6,9 @@
 			$project = $page;
 		}
 	?> -->
+
+	<a href="#overlay-info" rel="modal:open">open</a>
 	
-	<div class="project-info">
-	  <?php echo $project->text()->kirbytext() ?>
-	</div>
 
 	<div class="project-image">
 	  <?php foreach($project->images()->sortBy('sort', 'asc') as $image): ?>

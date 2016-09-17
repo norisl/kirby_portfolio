@@ -1,7 +1,8 @@
 <?php $tags = page('projects')->children()->groupBy('tags')?>
 <div class="button-group">
+  <button id="allButton" class="button" >All</button>
   <?php foreach($tags as $tag => $items) { ?>
-    <button class="button" data-js-filter-by-tags="<?php echo $tag ?>"> 
+    <button class="button filterButton" data-js-filter-by-tags="<?php echo $tag ?>"> 
      <?php echo $tag?>
     </button>
   <?php } ?>
@@ -12,7 +13,7 @@
 <ul class="teaser">
   <?php foreach($projects as $project_name => $project) { ?>
    
-    <li class="teaser-project  <?php echo $project->tags(); ?> ">
+    <li class="teaser-project<?php e($project->isOpen(),'-is-checked') ?> <?php echo $project->tags(); ?>" >
         
         <h3><a href="<?php echo $project->url() ?>">
         <?php echo $project->title()->html() ?></a></h3>
