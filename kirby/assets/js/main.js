@@ -31,9 +31,13 @@ $(function(){
     }
 });
 
-$('.button-group').on('click', 'button', function(){
+$('.filterButton').on('click', function(){
     var filterValue = $( this ).attr('data-js-filter-by-tags');
     filterProjectsByTag(filterValue);
+});
+
+$('#allButton').on('click', function(){
+	$('.teaser-project').css('display','');
 });
 
 function filterProjectsByTag(tagName){
