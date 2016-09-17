@@ -2,21 +2,31 @@ Title: About
 
 ----
 
-Text:Hi, I'm Nora.
+Text:
+### Hi, I'm Nora.
 
 I have a background in Graphic Design and Interaction Design. The topic "human behaviors" intrigues me and piques my curiosity. I'm interested in how they can be altered, extended and adapted to different situations and surroundings through design.
+----
 
-###### Education
+Education:
+#### Education
 
-University of Arts Zurich [ZHdK] | Bachelor degree Interaction Design | 2016 
-Fachklasse Grafik Luzern | Apprenticeship Graphic Design | 2011
+Bachelor degree Interaction Design | 2016 
+University of Arts Zurich [ZHdK]
+<br>
+Apprenticeship Graphic Design| 2011
+Fachklasse Grafik Luzern
+----
 
-
-###### Experience
+Experience:
+#### Experience
 
 Persönlich AG | Switzerland | 2015 March – till now | Freelance Graphic Design
 Denon AG | Switzerland | 2013 January – 2014 November | Freelancer Graphic Design
 Hesign Studio | Berlin | 2010 June – September | Graphic Design Internship
+----
 
+Exhibition:
+#### Exhibition
 
 Please write me for full CV
