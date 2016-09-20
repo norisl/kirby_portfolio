@@ -5,9 +5,10 @@
     <?php snippet('projects') ?>
 
  	</div>
-
-	<?php snippet('project') ?>
+ 	<div class="project-detail">
+		<?php snippet('project') ?>
+	</div>
 
 </main>
-<?php snippet('modal') ?>
+<?php snippet('modal_about') ?>
 <?php snippet('footer') ?> 

@@ -14,11 +14,11 @@
 </head>
 <body>
 
-  <header class="header cf" role="banner">
+  <header class="header cf" role="banner" >
     <div class="menu">
       <ul>
       <li><a href="#overlay-about" rel="modal:open">ABOUT</a></li>
-      <li><a href="<?php echo url() ?>">NORA</li>
+      <li><a href="<?php echo url() ?>">NORA </a></li>
       <li><a href="mailto:hello@noragailer.ch"> HELLO <3 </a></li>
      </ul>
    </div>

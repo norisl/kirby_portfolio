@@ -1,6 +1,7 @@
  <div id="overlay-about" style="display:none;">
-	<div class="about"></div>
+	<div class="about">
 	<?php echo $site->page('about')->text()->kirbytext() ?>
+	</div>
 	<div class="cv">
 	<?php echo $site->page('about')->Education()->kirbytext() ?>
 	</div>

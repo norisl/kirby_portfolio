@@ -1,47 +1,40 @@
-// // init Isotope
-// var $teaser = $('.teaser').isotope({
-// 	 itemSelector: '.teaser-project',
-// 	 layoutMode: 'fitRows'
+// $(function(){
+//     if(localStorage.getItem('lastClickedTag')){
+//     	console.log('fired');
+//         filterProjectsByTag(localStorage.getItem('lastClickedTag'));
+//     }
 // });
 
-// // filter items on button click
-// $('.button-group').on( 'click', 'button', function() {
-//   var filterValue = $( this ).attr('data-js-filter-by-tags');
-//   // use filterFn if matches value
-//   filterValue = filterValue;
-//   console.log(filterValue);
-
-//   $teaser.isotope({ filter: filterValue });
+// $('.filterButton').on('click', function(){
+//     var filterValue = $( this ).attr('data-js-filter-by-tags');
+//     filterProjectsByTag(filterValue);
 // });
 
-// $('.teaser-project').each( function( i, projectView ) {
-//   var $projectView = $( projectView );
-//   $projectview.on( 'click', 'button', function() {
-//     $projectview.find('.is-checked').removeClass('is-checked');
-//     $( this ).addClass('is-checked');
-//   });
+// $('#allButton').on('click', function(){
+// 	$('.teaser-project').css('display','');
 // });
 
-// // var element = document.getElementById('teaser-project-is-checked')
-// // element.scrollIntoView();
+// function filterProjectsByTag(tagName){
+//     $('.'+tagName).css('display','');
+//     $('.teaser-project').not('.'+tagName).css('display','none');
+//     localStorage.setItem('lastClickedTag',tagName);
+// }
+// $ (function (){
+// 	$('html, body').animate({
+// 	    scrollTop: $(".teaser-project-is-checked").offset().top
+// 	}, 1000);
 
-$(function(){
-    if(localStorage.getItem('lastClickedTag')){
-        filterProjectsByTag(localStorage.getItem('lastClickedTag'));
-    }
-});
+// })
 
-$('.filterButton').on('click', function(){
-    var filterValue = $( this ).attr('data-js-filter-by-tags');
-    filterProjectsByTag(filterValue);
-});
-
-$('#allButton').on('click', function(){
-	$('.teaser-project').css('display','');
-});
-
-function filterProjectsByTag(tagName){
-    $('.'+tagName).css('display','');
-    $('.teaser-project').not('.'+tagName).css('display','none');
-    localStorage.setItem('lastClickedTag',tagName);
+function loadBackground() {
+   $.ajax({
+      url: 'project-breathingapparatus',
+      success : function(project) {        
+        $('.project-detail').html(project);
+        }
+   });
 }
+
+$( ".fuerdichknopf" ).on( "click", function() {
+  loadBackground();
+});

@@ -9,5 +9,5 @@
   <?php snippet('project') ?>
 
 </main>
-<?php snippet('modal') ?>
+<?php snippet('modal_about') ?>
 <?php snippet('footer') ?>
