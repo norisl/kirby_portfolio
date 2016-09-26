@@ -35,7 +35,8 @@ Email:  support@getkirby.com
   font-weight: 400;
   src: url(../fonts/sourcesanspro-400-italic.woff) format('woff');
 }
-
+/* Sass
+-------------------------------------------------- */
 
 /* Reset
 -------------------------------------------------- */
@@ -48,7 +49,7 @@ Email:  support@getkirby.com
           box-sizing: border-box;
 }
 article, aside, details, figcaption, figure,
-footer, header, hgroup, main, nav, section, summary {
+footer, header, hgroup, main, nav, section, summary, blocker {
   display: block;
 }
 
@@ -75,192 +76,125 @@ img {
 html {
   font-size: 62.5%; /* font-size 1em = 10px on default browser settings */
   height: 101%;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'SuisseIntl', sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
 body {
-  margin: 0 auto;
-  font-size: 1.25em;
-  line-height: 1.5em;
-  background: #fff;
+  padding-top: 1.5rem;
+  padding: 2.5rem;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
   color: #222;
   overflow-y: hidden;
-}
-
-
-/* Header
--------------------------------------------------- */
-.header {
-  margin-bottom: 1.5em;
+  overflow-x: hidden;
 }
 
 /* Navigation
 -------------------------------------------------- */
-.menu a {
-  display: block;
-  color: #222;
+.menu{
+  z-index: 100;
+  color: inherit;
 }
-.menu a:hover {
+#first{
+  float: left;
+}
+#second{
+  left: 40%;a
+}
+#third{
+  float: right;
+  left: 100%;
+}
+.menu a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  display: block;
+  color: black;
+  background: white;
+}
+.menu ul>li:hover> a {
   color: red;
   text-decoration: none;
 }
-.menu .active {
-  color: red;
-}
+
 .menu li {
   list-style: none;
-  width: auto;
-  float: left;
-  padding-right: 20rem;
-}
-.menu > li {
-  position: relative;
-}
-.menu > li > a {
-  padding: .35em 0;
-  border-top: 1px solid #ddd;
-  font-weight: 600;
-}
-
-@media screen and (min-width: 40em) {
-  body {
-    padding: 3em;
-  }
-  .logo {
-    float: left;
-  }
-  .menu {
-      margin-right: -1em;
-      padding-left: 3.6rem;
-  }
-  .menu > li {
-    float: left;
-  }
-  .menu > li > a {
-    padding: .35em 1em;
-    border: 0;
-  }
-  .menu > li:hover .submenu {
-    display: block;
-  }
-}
-
-/* Overlay
--------------------------------------------------- */
-.blocker {
-  position: fixed;
-  top: 2rem; 
-  left:20rem;
-  width: 100%; height: 100%;
-  overflow: auto;
-  z-index: 1;
-  padding: 20px;
-  box-sizing: border-box;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.75);
-  text-align: center;
-}
-.blocker:before{
-  content: "";
   display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-  margin-right: -0.05em;
-}
-.blocker.behind {
-  background-color: transparent;
-}
-.modal {
-  display: inline-block;
-  vertical-align: middle;
-  position: relative;
-  z-index: 2;
-  max-width: 500px;
-  box-sizing: border-box;
-  width: 90%;
-  background: #fff;
-  padding: 15px 30px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -o-border-radius: 8px;
-  -ms-border-radius: 8px;
-  border-radius: 8px;
-  -webkit-box-shadow: 0 0 10px #000;
-  -moz-box-shadow: 0 0 10px #000;
-  -o-box-shadow: 0 0 10px #000;
-  -ms-box-shadow: 0 0 10px #000;
-  box-shadow: 0 0 10px #000;
-  text-align: left;
 }
 
-.modal a.close-modal {
-  position: absolute;
-  top: -12.5px;
-  right: -12.5px;
+.menu ul{
+  width: 100%; /* Ensures there are at least 2 lines of text, so justification works */
   display: block;
-  width: 30px;
-  height: 30px;
-  text-indent: -9999px;
-
 }
 
-.modal-spinner {
-  display: none;
-  width: 64px;
-  height: 64px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  margin-right: -32px;
-  margin-top: -32px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -o-border-radius: 8px;
-  -ms-border-radius: 8px;
-  border-radius: 8px;
-}
-
+ 
 /* Headings
 -------------------------------------------------- */
 h1 {
-  font-size: 2em;
+  font-size: 4em;
   line-height: 1.25em;
   font-weight: 400;
   margin-bottom: .5em;
 }
 h2 {
-  font-size: 2em;
+  font-size: 4em;
   line-height: 1.25em;
   font-weight: 300;
   margin-bottom: .5em;
-  color: red;
+  color: black;
 }
 h3 {
-  font-size: 1.4em;
+  font-size: 2em;
   line-height: 1.5em;
   font-weight: 400;
-  margin-bottom: .5em;
+  margin-bottom: .8em;
 }
 h4 {
-  font-size: 1.125em;
-  font-weight: 600;
-  line-height: 1.5em;
-  margin-bottom: .5em;
-  color: red;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  margin-bottom: .8em;
 }
-h1 a, h2 a, h3 a, h4 a {
-  color: inherit;
-  border: 0 !important;
+h5{
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
+h6{
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: .3rem;
+  text-transform: uppercase;
+
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  border: 0 !important;
+  text-decoration: none !important;
+}
+
+a:visited{
+  color: black;
+}
+p{
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+}
 
 
 /* Main
 -------------------------------------------------- */
 .main {
+  top: 0;
+  width: 100%;
   padding-bottom: 1.5em;
-  padding-left: 3.6rem;
+  margin-left: .5rem;
+  z-index: 5;
+
 }
 .main hr {
   margin: 3em 0;
@@ -273,18 +207,7 @@ h1 a, h2 a, h3 a, h4 a {
 .main ol {
   margin-bottom: 1.5em;
 }
-/*.main a {
-  border-bottom: 2px solid #ddd;
-}
-.main a:hover {
-  border-color: #222;
-}
-*/
-/* Text blocks */
-.text ul,
-.text ol {
-  margin-left: 1em;
-}
+
 
 /* Project meta
 -------------------------------------------------- */
@@ -305,35 +228,36 @@ h1 a, h2 a, h3 a, h4 a {
 
 /* Project teaser
 -------------------------------------------------- */
+.button{
+  background-color: transparent;
+  color:black;
+  padding-right: 3.19rem;
+  margin-bottom: 2rem;
+}
+
 .button:hover {
-  background-color: #8CF;
-  text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
-  color: #222;
+  color: blue;
 }
 
 .button:active {
-  box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
+ color: blue;
 }
 
 /* Project teaser
 -------------------------------------------------- */
 .project-overview {
-  float: left;
-  width: 100%;
-  max-height: 70rem;
+  position: fixed;
+  width: 40%;
+  max-height: 100%;
+  margin-bottom: 10rem;
   list-style: none;
-  max-width: 27.4rem;
-  overflow-y: scroll;
-  overflow-x:hidden;
+  overflow-y: visible;
+  overflow-x: hidden;
 }
 .project-overview li {
   float: left;
   margin-bottom: 1.5em;
-  list-style: none;
-}
-
-.project-overview li:hover> h3{
-  visibility: visible;
+  list-style: none;;
 }
 
 .teaser:after {
@@ -345,74 +269,146 @@ h1 a, h2 a, h3 a, h4 a {
   position: relative;
   display: inline-block;
   float: left;
-  width: 100%;
+  width: 90%;
   margin: 5px;
-  padding: 10px;
+  padding-bottom: 10px;
+  padding-left: 0;
+  margin-left: 0;
+}
+.teaser-project:hover> a>img {
+  /* box-shadow: 4px 4px 7px rgba(0,0,255,0.75);*/
+  display: none;
+  position: absolute;
+  top: -5rem;
+  width: 40%;
+  margin-left: -3rem;
 }
 
-
-
-.teaser-project img {
-  z-index: 1;
-  box-shadow: 10px 10px 7px rgba(200,200,200, 0.7);
-}
-.teaser-project img:hover{
-   box-shadow: 4px 4px 0px rgba(0,0,255,0.75);
+.teaser-project a> img {
+  z-index: -1;
+  box-shadow: 10px 10px 5px rgba(200,200,200, 0.7);
+  display: none;
 }
 
 .teaser-project h3{
-  position: absolute;
-  z-index: 100;
-  font-size: 3.1rem;
-  color: blue;
-  visibility: hidden;
+  display: inline;
+  position: relative;
+  font-size: 4.8rem;
+  line-height:5.3rem;
+  font-weight: 400;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-bottom: .3rem;
 }
 
-
-
-@media screen and (min-width: 50em) {
-  .project-overview li {
-    float: left;
-  }
-
-  .project-overview li:first-child {
-    margin-left: 0;
-  }
+.teaser-project h4{
+  display: inline;
+  position: relative;
+  z-index: 100;
+  font-size: 4.8rem;
+  line-height:5.3rem;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.teaser-project h3:hover >a {
+  color: black;
+}
+/*
+.teaser-project h3:active >a{
+  text-shadow: 2px 2px 0px yellow;
+}*/
+.is-checked img {
+  display: none;
+}
+.is-checked >h3{
+  color: yellow !important;
 }
 
 /* Project Detail
 -------------------------------------------------- */
 .project-detail{
   float: right;
-  max-width: 78.5rem;
-  max-height: 50rem;
+  left: 40%;
+  width: 55%;
+  top: 0; 
+  padding-right: 0.5rem;
+  max-height: 75rem;
   overflow: scroll;
 }
-.project-info{
-  position: fixed;
-  max-width: 78.5rem;
-  width:100%;
-  display: inline-block;
+.project-detail p{
+  margin-top: 0;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.9rem;
+   letter-spacing: 0.04em;
+}
+.project-image img{
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 70rem;
 
 }
-
 /* QuestionMark
 -------------------------------------------------- */
-.question-icon {
-  float: right;
-  position: fixed;
-  display: block;
-  width: 3rem;
-  height: 3rem;
-}
-
 #cross{
   visibility:hidden;
 }
-/*
-#slider {
-  width:3.2rem;
-}*/
+
+/* Modal
+-------------------------------------------------- */
+.blocker {
+  position: fixed;
+  top:7rem; 
+  left: 0;
+  width: auto; 
+  height: 100%;
+  overflow: auto;
+  z-index: 1;
+  box-sizing: border-box;
+  background: rgba(255,255,255,0.9);
+}
+.blocker:before{
+  top: 0;
+  content: "";
+  height: 100%;
+}
+
+.modal {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  padding-left: 3.5rem;
+  box-sizing: border-box;
+  text-align: left;
+  overflow-x: hidden;
+}
+
+.modal a.close-modal {
+  position: absolute;
+  top: -12.5px;
+  right: -12.5px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  text-indent: -9999px;
+  background-color: red;
+}
+
+.about{
+  max-width: 70rem;
+  margin-bottom: 3rem;
+}
+.cv{
+  float: left;
+  padding-right:4rem;
+  padding-top: 4rem;
+}
 
 /* Footer
 -------------------------------------------------- */
@@ -421,4 +417,68 @@ h1 a, h2 a, h3 a, h4 a {
   position: relative;
   padding: 1em 0 6em;
   font-size: .8em;
+}  @
+/*@ media queries
+----------------------------------------*/
+@media screen and (max-width: 81rem){
+    .main{
+      width: 100%;
+    }
+    .project-overview h3, .project-overview h4 {
+    font-size: 4rem;
+    line-height: 4.9rem;
+    word-wrap: break-word;
+    word-break: break-all;
+    white-space: normal;
+  }
 }
+@media screen and (max-width: 66rem){
+      .main{
+      width: 100%;
+      }
+      .nano{
+        width: 95%;
+      }
+      .project-overview h3, .project-overview h4 {
+      font-size: 4rem;
+      line-height: 4.9rem;
+      word-wrap: break-word;
+      word-break: break-all;
+      white-space: normal;
+  }
+}
+
+@media screen and (max-width: 35rem){
+  body{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .header{
+    width: 100%;
+  }
+  .main{
+    width:100%;
+  }
+  .menu{
+   width: 92%;
+   min-width: 28rem;
+   margin: 0 1rem 0 1rem;
+  }
+  .menu a {
+    font-size: 1.4rem;
+  }
+  .project-overview{
+    width: 95%;
+    margin: 0 1rem 0 1rem;
+  }
+  .project-overview h3, .project-overview h4 {
+    font-size: 3.8rem;
+    line-height: 4.3rem;
+
+  }
+  .project-detail{
+    display: none;
+  }
+}
+
+
