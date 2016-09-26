@@ -1,40 +1,38 @@
-// $(function(){
-//     if(localStorage.getItem('lastClickedTag')){
-//     	console.log('fired');
-//         filterProjectsByTag(localStorage.getItem('lastClickedTag'));
-//     }
-// });
-
-// $('.filterButton').on('click', function(){
-//     var filterValue = $( this ).attr('data-js-filter-by-tags');
-//     filterProjectsByTag(filterValue);
-// });
-
-// $('#allButton').on('click', function(){
-// 	$('.teaser-project').css('display','');
-// });
-
-// function filterProjectsByTag(tagName){
-//     $('.'+tagName).css('display','');
-//     $('.teaser-project').not('.'+tagName).css('display','none');
-//     localStorage.setItem('lastClickedTag',tagName);
-// }
-// $ (function (){
-// 	$('html, body').animate({
-// 	    scrollTop: $(".teaser-project-is-checked").offset().top
-// 	}, 1000);
-
-// })
-
-function loadBackground() {
+function loadBackground(destination) {
    $.ajax({
-      url: 'project-breathingapparatus',
-      success : function(project) {        
-        $('.project-detail').html(project);
+      url: destination,
+      success : function(project) { 
+      $('.project-detail').html(project);
+    
         }
    });
 }
 
-$( ".fuerdichknopf" ).on( "click", function() {
-  loadBackground();
+$( ".teaser-project-link" ).on( "click", function(event) {
+	event.preventDefault();
+	var $url = $(this).attr('data-slug');
+ 	loadBackground($url);
 });
+
+
+
+
+$(document).ready(function () {
+	var colors = ["#FF358B", "#01B0F0", "#AEEE00", "#000000"];
+	var index = 0;
+	
+	$ (this).click(function (){
+	if (index >= colors.length)
+    index = 0; // reset back to first color
+	$ ('li').css('color', colors[index]);
+	index++;
+	});
+
+	if ($(window).width() >= 350) {
+		$( '.teaser-project-link').click( function(event) {
+	 	$('.project-detail').css({'display':'block', 'float':'left', 'width':'95%', 'margin': '0 1rem 0 1rem'});
+	 	$('.project-overview').css( {'position':'fixed', 'left':' -100%', 'display':'none'});
+		});
+	};
+
+ });

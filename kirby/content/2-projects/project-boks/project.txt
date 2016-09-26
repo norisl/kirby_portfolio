@@ -1,6 +1,7 @@
-Title: Boks
+Title: Boks,
 ----
-
+Field: Interactive Installation
+----
 Year: 2015
 
 ----
@@ -8,8 +9,11 @@ Year: 2015
 Tags: space
 ----
 
-Text:[BOKS](http://int-ra.com/) is an interactive installation which researches the perception and communication between people in staged rooms. For the installation, two rooms were built as the experimental area. Two people, each in one room at a time, could move and communicate on different ways with the other person. BOKS displays various types of opportunities in communication between humans and requires a new perception from the users into this topic to discover other ways to create a conversation.
+Text:(link: http://int-ra.com/ text: BOKS popup: yes) is an interactive installation which researches the perception and communication between people in staged rooms. For the installation, two rooms were built as the experimental area. Two people, each in one room at a time, could move and communicate on different ways with the other person. BOKS displays various types of opportunities in communication between humans and requires a new perception from the users into this topic to discover other ways to create a conversation.
 
 ##### Exhibition
-2015 – [Jungkunst Winterthur](http://www.jungkunst.ch)  
-2016 – [Unpainted Munich](http://www.unpainted.net/)
+2015 – (link:http://www.jungkunst.ch text:Jungkunst Winterthur popup: yes)  
+2016 – (link:http://www.unpainted.net text:Unpainted Munich popup: yes)
+----
+
+video: (vimeo: https://vimeo.com/148247795)

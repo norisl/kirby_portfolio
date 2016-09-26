@@ -1,7 +1,8 @@
-Title: Soft Architecture 
+Title: Soft Architecture, 
 
 ----
-
+Field: Material Exploraction
+----
 Year: 2014
 
 ----
@@ -16,3 +17,6 @@ Text: An installation by David Simon, Nora Gailer, Nicole Schulthess, Jon Wirthn
 
 For this installation we experimented with the potential of soft components in architectural constructions. By imitating breathing movements with silicone elements by inflating and deflating them with the help of motors, the installation comes alive and reacts to the visitors depending on their behavior towards the elements. Similar like a spider net when touched, our aim was to build a formation with connected entities which react on movement. The motion is given further from one piece to the next, triggering a domino effect throughout the construction.
 
+----
+
+video: https://vimeo.com/113839970

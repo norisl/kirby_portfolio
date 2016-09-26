@@ -1,7 +1,8 @@
-Title: Breathing Apparatus
+Title: Breathing Apparatus,
 
 ----
-
+Field: Critical Design And Strange Object
+----
 Year: 2015
 
 ----
@@ -16,4 +17,7 @@ Text: "Desires in a transparent world" explores the human desire in the context 
 
 The device’s appearance suggests something that is both machine and alive. It is unsettling and perverse, yet very alluring at the same time. This dichotomy reflects the nature of the device perfectly: It satisfies a deep and intimate longing in the user while simultaneously taking away something that could only be given personally so far: intimacy.
 
-Please see the full documentation [here](http://breathingapparatus.tumblr.com/tagged/device)
+Please see the full documentation (link: http://breathingapparatus.tumblr.com/tagged/device text:here popup: yes)
+
+----
+video: (vimeo: https://vimeo.com/149384626)

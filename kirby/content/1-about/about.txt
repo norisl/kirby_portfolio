@@ -5,28 +5,56 @@ Title: About
 Text:
 ### Hi, I'm Nora.
 
-I have a background in Graphic Design and Interaction Design. The topic "human behaviors" intrigues me and piques my curiosity. I'm interested in how they can be altered, extended and adapted to different situations and surroundings through design.
+I am an Interaction Design with a background in Graphic Design. The topic "human behaviors" intrigues me and piques my curiosity. I'm interested in how they can be altered, extended and adapted to different situations and surroundings through design.  
+
+Please write me for full CV
 ----
 
 Education:
-#### Education
+##### Education
 
-Bachelor degree Interaction Design | 2016 
-University of Arts Zurich [ZHdK]
-<br>
-Apprenticeship Graphic Design| 2011
-Fachklasse Grafik Luzern
+###### B.A. Interaction Design
+(link:http://zhdk.ch text:ZHdK popup:yes), Zurich, CH
+2013 September - Juli 2016
+
+###### Graphic Design – Apprenticeship 
+  
+Fachklasse Grafik, Luzern, CH  
+2008 August - August 2011
 ----
 
 Experience:
-#### Experience
+##### Experience
 
-Persönlich AG | Switzerland | 2015 March – till now | Freelance Graphic Design
-Denon AG | Switzerland | 2013 January – 2014 November | Freelancer Graphic Design
-Hesign Studio | Berlin | 2010 June – September | Graphic Design Internship
+###### Freelance Graphic Design
+(link: http://www.persoenlich.com/ text: Persönlich AG popup: yes), Zurich, CH  
+2015 March – June 2016 
+
+###### Freelancer Graphic Design
+
+Denon AG, Rapperswil, CH  
+2013 January –  November 2014  
+
+###### Graphic Design Intern  
+(link: http://www.hesignchina.com/ text: Hesign Studio popup: yes), Berlin, DE  
+2010 June – September  
+ 
 ----
 
 Exhibition:
-#### Exhibition
+##### Exhibition
 
-Please write me for full CV
+
+###### (link: http://www.unpainted.net text: Unpainted Munich popup: yes)
+BOKS  
+2016 Februar
+
+
+###### (link: http://www.jungkunst.ch text: Jungkunst Winterthur popup: yes)  
+BOKS  
+2015 Oktober
+
+###### (link: http://www.grafik-schweiz.ch/ text: Grafik 15 popup: yes)
+Interactiv Visualisation  
+2015 March	 
+
