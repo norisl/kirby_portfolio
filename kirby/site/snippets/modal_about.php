@@ -11,5 +11,4 @@
 	<div class="cv">
 	<?php echo $site->page('about')->Exhibition()->kirbytext() ?>
 	</div>
-	<a href="#" rel="modal:close">Close</a> 
 </div>

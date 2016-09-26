@@ -3,6 +3,7 @@
   <script src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
   <?php echo js('assets/js/main.js') ?>
   <?php echo js('assets/js/jquery.modal.js') ?>
+  <?php echo js('assets/js/jquery.nanoscroller.min.js') ?>
  
   </footer>
 

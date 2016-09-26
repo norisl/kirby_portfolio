@@ -1,22 +1,7 @@
-<nav role="navigation">
-  <ul class="menu cf">
-
-<?php foreach($pages->visible() as $p): ?>
-    <li>
-      <a <?php e($p->isOpen(), ' class="active"') ?> href="<?php echo $p->url() ?>"><?php echo $p->title()->html() ?></a>
-
- <?php if($p->hasVisibleChildren()): ?>
-      <ul class="submenu">
-        <?php foreach($p->children()->visible() as $p): ?>
-        <li>
-          <a href="<?php echo $p->url() ?>"><?php echo $p->title()->html() ?></a>
-        </li>
-        <?php endforeach ?>
-      </ul>
-      <?php endif ?>
-
-    </li>
-    <?php endforeach ?>
-  </ul> 
-
-</nav>
+  <div class="menu">
+      <ul>
+      <li id="first"><a  href="#overlay-about" rel="modal:open">ABOUT</a></li>
+      <li id="second"><a  href="<?php echo url() ?>">NORA </a></li>
+      <li id="third"><a  href="mailto:hello@noragailer.ch"> HELLO <3 </a></li>
+     </ul>
+   </div>

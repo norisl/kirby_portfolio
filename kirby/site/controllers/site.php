@@ -4,10 +4,11 @@
 return function($site, $pages, $page) {
 
 	if(kirby()->request()->ajax()) {
-			
-	    $project = $page;
+		
+		$data = [];	
+	    $data['project'] = $page;
 
-		die(snippet('project', compact('project')));
+		die(snippet('project', $data));
 	}
 	else {
 		$data = [];
@@ -26,3 +27,4 @@ return function($site, $pages, $page) {
 
 	
 };
+?>
