@@ -20,7 +20,7 @@
     <li class="teaser-project <?php e($project->isOpen(),' is-checked') ?> <?php echo $project->tags(); ?>"  >
         
         <h3>
-             <a data-slug="<?php echo $project->slug() ?>" class="teaser-project-link" href="<?php echo $project->url() ?>"><?php echo $project->title()->html() ?></a>
+             <a data-pjax data-slug="<?php echo $project->slug() ?>" class="teaser-project-link" href="<?php echo $project->url() ?>"><?php echo $project->title()->html() ?></a>
         <h4><?php echo $project->field()->html() ?></h4>
        </h3>
         
