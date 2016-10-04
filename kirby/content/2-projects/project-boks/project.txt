@@ -16,4 +16,4 @@ Text:(link: http://int-ra.com/ text: BOKS popup: yes) is an interactive installa
 2016 – (link:http://www.unpainted.net text:Unpainted Munich popup: yes)
 ----
 
-video: (vimeo: https://vimeo.com/148247795)
+videourl: (vimeo: https://vimeo.com/148247795,width:100%, height:100%, class: video)

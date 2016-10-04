@@ -20,4 +20,4 @@ The device’s appearance suggests something that is both machine and alive. It 
 Please see the full documentation (link: http://breathingapparatus.tumblr.com/tagged/device text:here popup: yes)
 
 ----
-video: (vimeo: https://vimeo.com/149384626)
+videourl: (vimeo: https://vimeo.com/149384626,width:100%, height:100%, class: video)

@@ -18,4 +18,4 @@ Teaser:Participation Design to form a Public Discussion
 Text: (link: http://designactivism.ch/ text:Pop-up Forum popup: yes) deals with establishing a discussion platform in a public area. Our goal is to create a space where strangers get together to exchange opinions and personal views about a social-political topic. We provide a space in which anyone is allowed to join the discussion. In the provided setting, the participants explore and talk about the idea of an unconditional basic income and its potential, as well as its limitations. During the conversation, the participants are asked to leave a comment, statement or any other message on the table by drawing or writing. With this platform, we give people the opportunity to discover different perspectives, the potential to re-evaluate their own opinion and to receive new insights.
 
 ----
-video:(vimeo: https://vimeo.com/170584910)
+videourl: (vimeo: https://vimeo.com/170584910,width:100%, height:100%, class: video)

@@ -19,4 +19,4 @@ For this installation we experimented with the potential of soft components in a
 
 ----
 
-video: https://vimeo.com/113839970
+videourl: (vimeo: https://vimeo.com/113839970,width:100%, height:100%, class: video)
