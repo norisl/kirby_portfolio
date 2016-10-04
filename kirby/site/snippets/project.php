@@ -9,13 +9,19 @@
 
 
 <div class="project-image">
-<?php if($project->content()->has('video')):?>
-	<?php foreach($project->read('video') as $video):?>
-	 <?php echo vimeo('$project')?>
-	<?php endforeach ?>	
-<?php endif ?>
 
+<?php if($project->content()->has('videourl')):?>
+		<?php $video_url = $project->videourl();
+		echo $video_url->kirbytext();
+		echo $project->text()->kirbytext();?>
+
+<?php else :?>
+	<figure>
+	<?php $image = $project->images()?>
+	<img src="<php echo $image->url()?>">
+	</figure>
 	<?php echo $project->text()->kirbytext() ?>
+<?php endif ?>	
 	 
 	<?php foreach($project->images()->offset(1)->sortBy('sort', 'asc') as $image): ?>
 		<figure>
