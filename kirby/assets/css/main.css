@@ -81,6 +81,7 @@ html {
   -ms-text-size-adjust: 100%;
 }
 body {
+  height: 100%;
   padding-top: 1.5rem;
   padding: 2.5rem;
   font-size: 1.25rem;
@@ -97,22 +98,30 @@ body {
   color: inherit;
   margin-bottom:4rem;
 }
-#first{
+.first{
   float: left;
+  width: 48%;
 }
-#second{
-  left: 40%;a
+.second{
+  left: 55%;
 }
-#third{
+
+.third {
+ float: right;
+}
+.heart-icon{
   float: right;
-  left: 100%;
+  width:1.7rem;
+  margin-left: .5rem
 }
+
 .menu a {
   font-size: 1.8rem;
   text-decoration: none;
   display: block;
   color: black;
   background: white;
+  display: inline;
 }
 .menu ul>li:hover> a {
   color: red;
@@ -126,6 +135,7 @@ body {
 
 .menu ul{
   width: 100%; /* Ensures there are at least 2 lines of text, so justification works */
+  height: 100%;
   display: block;
 }
 
@@ -146,16 +156,22 @@ h2 {
   color: black;
 }
 h3 {
-  font-size: 2em;
+  font-size: 1.7rem;
   line-height: 1.5em;
   font-weight: 400;
   margin-bottom: .8em;
+  word-wrap: break-word;
+  word-break: break-all;
+  white-space: normal;
 }
 h4 {
   font-size: 2rem;
   font-weight: 500;
   line-height: 1.5rem;
   margin-bottom: .8em;
+  word-wrap: break-word;
+  word-break: break-all;
+  white-space: normal;
 }
 h5{
   font-size: 1.4rem;
@@ -248,10 +264,11 @@ p{
 -------------------------------------------------- */
 .project-overview {
   position: fixed;
-  width: 40%;
+  width: 45%;
   max-height: 100%;
   margin-bottom: 10rem;
-  padding-bottom: 7rem;
+  padding-right: 4rem;
+  padding-bottom: 10rem;
   list-style: none;
   overflow-y: visible;
   overflow-x: hidden;
@@ -333,30 +350,37 @@ p{
 -------------------------------------------------- */
 .project-detail{
   float: right;
-  left: 40%;
   width: 55%;
+  height: 100%;
   top: 0; 
   padding-right: 0.5rem;
+  padding-left: 3rem;
+  padding-bottom: 30rem;
   max-height: 75rem;
   overflow: scroll;
 }
 .project-detail p{
+  float: right;
   margin-top: 0;
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.9rem;
-   letter-spacing: 0.04em;
+  letter-spacing: 0.04em;
 }
 .project-image img{
+  float: right
   margin-left: auto;
   margin-right: auto;
   max-height: 70rem;
 
 }
-/* QuestionMark
--------------------------------------------------- */
-#cross{
-  visibility:hidden;
+
+.video{
+  width: 100%;
+  height: 36rem;
+}
+.arrow{
+  display: none;
 }
 
 /* Modal
@@ -393,18 +417,19 @@ p{
 
 .modal a.close-modal {
   position: absolute;
-  top: -12.5px;
-  right: -12.5px;
+  top: 1rem;
+  right: 1.2rem;
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 2.5rem;
+  height: 2.5rem;
   text-indent: -9999px;
-  background-color: red;
+  color: red;
 }
 
 .about{
   max-width: 70rem;
   margin-bottom: 3rem;
+  margin-right: 5rem;
 }
 .cv{
   float: left;
@@ -449,23 +474,9 @@ p{
     white-space: normal;
   }
 }
-@media (max-width: 66rem){
-      .main{
-      width: 100%;
-      }
-      .nano{
-        width: 95%;
-      }
-      .project-overview h3, .project-overview h4 {
-      font-size: 4rem;
-      line-height: 4.9rem;
-      word-wrap: break-word;
-      word-break: break-all;
-      white-space: normal;
-  }
-}
 
-@media (max-width: 35rem){
+
+@media (max-width: 45rem){
   body{
     padding-left: 0;
     padding-right: 0;
@@ -487,15 +498,33 @@ p{
   }
   .project-overview{
     width: 95%;
-    margin: 0 1rem 0 1rem;
+    margin: 0 1rem 4rem 1rem;
   }
   .project-overview h3, .project-overview h4 {
     font-size: 3.8rem;
     line-height: 4.3rem;
-
   }
   .project-detail{
     display: none;
+    margin-left:1rem;
+    margin-right: 1rem;
+    padding-left: 0;
+  }
+  .project-image img{
+  margin-left: auto;
+  margin-right: auto;
+
+}
+  .arrow{
+    display:inherit;
+    position: fixed;
+    width: 25%;
+    top: 30rem;
+    left: 40%;
+    z-index: 200;
+  }
+  .heart-icon{
+    width: 1.4rem;
   }
 }
 
