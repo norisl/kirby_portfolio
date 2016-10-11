@@ -1,0 +1,15 @@
+Title: Internal Migration,
+----
+Field: Interactiv Visualisation 
+----
+Year: 2013
+
+----
+
+Tags: graphic
+
+----
+Teaser: Concept and Design for the Website
+----
+
+Text:The visualisation shows from which origin to what place people move in the canton Zürich. This visualisation serves the goal to clearer and faster realize about the internal migration and what factors this behaviour influences. It is useful to recognize possible changes occurring for example in transport, energy consumption or taxes. To represent the data accurately and sense making a circle is used. With this it is possible to show all municipalities on the same level and connecting them individual. The dotted lines show the direction in which the most people move from one place to the other. Each municipality is represented in form of a coloured circle. The colour stands either for a net provision or the number of uninhabited houses. The size of the circle defines the total of the population or the space per person provided. Which parameter should be shown can be selected by the user.  When clicking on one of the municipalities further information will be visible in detail. Because of the large amount of data, it was necessary to work with controls. The number of person represented by the lines, as well as the size of the circles places on the line can be adjust. In this way the user itself has the control over the quantity of data being visible and change it individually for his needs.

@@ -8,22 +8,19 @@
   <?php } ?>
 </div> -->
 
+<ul> 
 
-<!-- reload js button 
-<button class="fuerdichknopf">RELOAD</button>
- -->
-
- 
-<ul class="teaser">
   <?php foreach($projects as $project_name => $project) { ?>
-   
-    <li class="teaser-project <?php e($project->isOpen(),' is-checked') ?> <?php echo $project->tags(); ?>"  >
-        
+
+  <?php $items= $pages->visible(); 
+   $first = $items->first();?>
+
+    <li class="teaser-project <?php echo $project->tags(); if($items   == $first) "is-checked"?>" >
         <h3>
-             <a data-pjax data-slug="<?php echo $project->slug() ?>" class="teaser-project-link" href="<?php echo $project->url() ?>"><?php echo $project->title()->html() ?></a>
-        <h4><?php echo $project->field()->html() ?></h4>
-       </h3>
-        
+             <a data-pjax data-slug="<?php echo $project->slug() ?>" class="teaser-project-link" href="<?php echo $project->url() ?>"><?php echo $project->title()->html() ?>
+               </a>
+               <h4><?php echo $project->field()->html() ?></h4> 
+       </h3>  
      </li>
 
   <?php } ?>

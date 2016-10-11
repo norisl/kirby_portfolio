@@ -1,7 +1,10 @@
 <?php
 
+$kirby = kirby();
 
 return function($site, $pages, $page) {
+
+
 
 	if(kirby()->request()->ajax()) {
 		
