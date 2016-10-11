@@ -11,521 +11,582 @@ Email:  support@getkirby.com
 
 /* Source Sans Pro
 -------------------------------------------------- */
+
 @font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 300;
-  src: url(../fonts/sourcesanspro-300.woff) format('woff');
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 300;
+    src: url(../fonts/SuisseIntl-Thin-WebTrial.woff) format('woff');
 }
+
 @font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 400;
-  src: url(../fonts/sourcesanspro-400.woff) format('woff');
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/SuisseIntl-Regular-WebTrial.woff) format('woff');
 }
+
 @font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 600;
-  src: url(../fonts/sourcesanspro-600.woff) format('woff');
+    font-family: 'SuisseIntl';
+    font-style: normal;
+    font-weight: 600;
+    src: url(../fonts/SuisseIntl-Medium-WebTrial.woff) format('woff');
 }
+
 @font-face {
-  font-family: 'Source Sans Pro';
-  font-style: italic;
-  font-weight: 400;
-  src: url(../fonts/sourcesanspro-400-italic.woff) format('woff');
+    font-family: 'SuisseIntl';
+    font-style: italic;
+    font-weight: 400;
+    src: url(../fonts/SuisseIntl-RegularItalic-WebTrial.woff) format('woff');
 }
+
+
 /* Sass
 -------------------------------------------------- */
 
+
 /* Reset
 -------------------------------------------------- */
-*, *:before, *:after {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
-article, aside, details, figcaption, figure,
-footer, header, hgroup, main, nav, section, summary, blocker {
-  display: block;
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary,
+blocker {
+    display: block;
 }
 
 
 /* Pix
 -------------------------------------------------- */
+
 img {
-  display: block;
-  max-width: 100%;
+    display: block;
+    max-width: 100%;
 }
 
 
 /* Clearfix
 -------------------------------------------------- */
+
 .cf:after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
 
 
 /* Site
 -------------------------------------------------- */
+
 html {
-  font-size: 62.5%; /* font-size 1em = 10px on default browser settings */
-  height: 100%;
-  font-family: 'SuisseIntl', sans-serif;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
+    font-size: 62.5%;
+    /* font-size 1em = 10px on default browser settings */
+    height: 100%;
+    font-family: 'SuisseIntl', sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
 }
+
 body {
-  height: 100%;
-  padding-top: 1.5rem;
-  padding: 2.5rem;
-  font-size: 1.25rem;
-  line-height: 1.5rem;
-  color: #222;
-  overflow-y: hidden;
-  overflow-x: hidden;
-}
-
-/* Navigation
--------------------------------------------------- */
-.menu{
-  z-index: 100;
-  color: inherit;
-  margin-bottom:4rem;
-}
-.first{
-  float: left;
-  width: 48%;
-}
-.second{
-  left: 55%;
-}
-
-.third {
- float: right;
-}
-.heart-icon{
-  float: right;
-  width:1.7rem;
-  margin-left: .5rem
-}
-
-.menu a {
-  font-size: 1.8rem;
-  text-decoration: none;
-  display: block;
-  color: black;
-  background: white;
-  display: inline;
-}
-.menu ul>li:hover> a {
-  color: red;
-  text-decoration: none;
-}
-
-.menu li {
-  list-style: none;
-  display: inline-block;
-}
-
-.menu ul{
-  width: 100%; /* Ensures there are at least 2 lines of text, so justification works */
-  height: 100%;
-  display: block;
-}
-
- 
-/* Headings
--------------------------------------------------- */
-h1 {
-  font-size: 4em;
-  line-height: 1.25em;
-  font-weight: 400;
-  margin-bottom: .5em;
-}
-h2 {
-  font-size: 4em;
-  line-height: 1.25em;
-  font-weight: 300;
-  margin-bottom: .5em;
-  color: black;
-}
-h3 {
-  font-size: 1.7rem;
-  line-height: 1.5em;
-  font-weight: 400;
-  margin-bottom: .8em;
-  word-wrap: break-word;
-  word-break: break-all;
-  white-space: normal;
-}
-h4 {
-  font-size: 2rem;
-  font-weight: 500;
-  line-height: 1.5rem;
-  margin-bottom: .8em;
-  word-wrap: break-word;
-  word-break: break-all;
-  white-space: normal;
-}
-h5{
-  font-size: 1.4rem;
-  font-weight: 400;
-  line-height: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
-h6{
-  font-size: 1.3rem;
-  font-weight: 700;
-  margin-top: 2rem;
-  margin-bottom: .3rem;
-  text-transform: uppercase;
+    height: 100%;
+    width: 100%;
+    padding-top: 1.5rem;
+    padding: 2.5rem;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: #222;
+    overflow-x: hidden;
+    overflow-y: scroll;
 
 }
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-  border: 0 !important;
-  text-decoration: none !important;
-}
-
-a:visited{
-  color: inherit;
-}
-p{
-  font-size: 1.4rem;
-  font-weight: 400;
-  line-height: 1.6rem;
-}
-
-
 /* Main
 -------------------------------------------------- */
-.main {
-  top: 0;
-  width: 100%;
-  padding-bottom: 1.5em;
-  margin-left: .5rem;
-  z-index: 5;
 
+.main {
+    top: 0;
+    width: 100%;
+    padding-bottom: 1.5em;
+    margin-left: .5rem;
+    z-index: 5;
 }
+
 .main hr {
-  margin: 3em 0;
-  height: 2px;
-  background: #ddd;
+    margin: 3em 0;
+    height: 2px;
+    background: #ddd;
 }
+
 .main p,
 .main figure,
 .main ul,
 .main ol {
-  margin-bottom: 1.5em;
+    margin-bottom: 1.5em;
+}
+.svg-icon{
+
 }
 
-
-/* Project meta
+/* Navigation
 -------------------------------------------------- */
-.meta {
-  margin-bottom: 1.5em;
+.header{
+    width: auto;
+    padding-bottom: 7rem;
 }
-.meta li {
-  float: left;
-  list-style: none;
-  margin-right: 2em;
-  color: red;
-}
-.meta li b {
-  font-weight: 400;
-  color: #000;
-  padding-right: .25em;
+.menu {
+    position: fixed;
+    left:2.5rem;
+    right: 2.5rem;
+    width: inherit;
+    z-index: 100;
+    color: inherit;
+    margin-bottom: 5rem;
+    display: inline-block;
 }
 
-/* Project teaser
+.menu ul {
+    width: 100%;
+    height: 100%;
+}
+
+
+.menu li {
+    list-style: none;
+    display: inline-block;
+}
+.menu ul>li:hover> a {
+    font-style: italic;
+    text-decoration: none;
+}
+
+.first {
+    float: left;
+    width: 48%;
+    color: inherit;
+}
+
+.second {
+    left: 55%;
+    color: inherit;
+}
+
+.third {
+    float: right;
+    color: inherit;
+}
+
+.heart-icon {
+    float: right;
+    width: 1.7rem;
+    margin-left: .5rem
+}
+.heart-icon svg{
+  fill: inherit;
+}
+.menu a {
+    font-size: 1.8rem;
+    text-decoration: none;
+    display: block;
+    color: black;
+    background: white;
+    display: inline;
+}
+
+
+
+
+/* Headings
 -------------------------------------------------- */
-.button{
-  background-color: transparent;
-  color:black;
-  padding-right: 3.19rem;
-  margin-bottom: 2rem;
+
+h1 {
+    font-size: 4em;
+    line-height: 1.25em;
+    font-weight: 400;
+    margin-bottom: .5em;
 }
 
-.button:hover {
-  color: blue;
+h2 {
+    font-size: 4em;
+    line-height: 1.25em;
+    font-weight: 300;
+    margin-bottom: .5em;
+    color: black;
 }
 
-.button:active {
- color: blue;
-}
-
-/* Project teaser
--------------------------------------------------- */
-.project-overview {
-  position: fixed;
-  width: 45%;
-  max-height: 100%;
-  margin-bottom: 10rem;
-  padding-right: 4rem;
-  padding-bottom: 10rem;
-  list-style: none;
-  overflow-y: visible;
-  overflow-x: hidden;
-}
-.project-overview li {
-  float: left;
-  margin-bottom: 1.5em;
-  list-style: none;;
-}
-
-.teaser:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-.teaser-project{
-  position: relative;
-  display: inline-block;
-  float: left;
-  width: 90%;
-  margin: 5px;
-  padding-bottom: 10px;
-  padding-left: 0;
-  margin-left: 0;
-}
-.teaser-project:hover> a>img {
-  /* box-shadow: 4px 4px 7px rgba(0,0,255,0.75);*/
-  display: none;
-  position: absolute;
-  top: -5rem;
-  width: 40%;
-  margin-left: -3rem;
-}
-
-.teaser-project a> img {
-  z-index: -1;
-  box-shadow: 10px 10px 5px rgba(200,200,200, 0.7);
-  display: none;
-}
-
-.teaser-project h3{
-  display: inline;
-  position: relative;
-  font-size: 4.8rem;
-  line-height:5.3rem;
-  font-weight: 400;
-  letter-spacing: 0.13em;
-  text-transform: uppercase;
-  text-decoration: none;
-  margin-bottom: .3rem;
-}
-
-.teaser-project h4{
-  display: inline;
-  position: relative;
-  z-index: 100;
-  font-size: 4.8rem;
-  line-height:5.3rem;
-  font-weight: 400;
-  letter-spacing: -0.01em;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-.teaser-project h3:hover >a {
-  color: black;
-}
-/*
-.teaser-project h3:active >a{
-  text-shadow: 2px 2px 0px yellow;
-}*/
-.is-checked img {
-  display: none;
-}
-.is-checked >h3{
-  color: yellow !important;
-}
-
-/* Project Detail
--------------------------------------------------- */
-.project-detail{
-  float: right;
-  width: 55%;
-  height: 100%;
-  top: 0; 
-  padding-right: 0.5rem;
-  padding-left: 3rem;
-  padding-bottom: 30rem;
-  max-height: 75rem;
-  overflow: scroll;
-}
-.project-detail p{
-  float: right;
-  margin-top: 0;
-  font-size: 1.6rem;
-  font-weight: 500;
-  line-height: 1.9rem;
-  letter-spacing: 0.04em;
-}
-.project-image img{
-  float: right
-  margin-left: auto;
-  margin-right: auto;
-  max-height: 70rem;
-
-}
-
-.video{
-  width: 100%;
-  height: 36rem;
-}
-.arrow{
-  display: none;
-}
-
-/* Modal
--------------------------------------------------- */
-.blocker {
-  position: fixed;
-  top:8rem; 
-  left: 0;
-  width: auto; 
-  height: 100%;
-  overflow: auto;
-  z-index: 1;
-  box-sizing: border-box;
-  background: rgba(255,255,255,0.9);
-}
-.blocker:before{
-  top: 0;
-  content: "";
-  height: 100%;
-}
-
-.modal {
-  display: inline-block;
-  position: relative;
-  z-index: 2;
-  max-width: 100%;
-  height: auto;
-  max-height: 100%;
-  padding-left: 3.5rem;
-  box-sizing: border-box;
-  text-align: left;
-  overflow-x: hidden;
-}
-
-.modal a.close-modal {
-  position: absolute;
-  top: 1rem;
-  right: 1.2rem;
-  display: block;
-  width: 2.5rem;
-  height: 2.5rem;
-  text-indent: -9999px;
-  color: red;
-}
-
-.about{
-  max-width: 70rem;
-  margin-bottom: 3rem;
-  margin-right: 5rem;
-}
-.cv{
-  float: left;
-  padding-right:4rem;
-  padding-top: 4rem;
-}
-/* Animation
--------------------------------------------------- */
-.path {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  animation: dash 5s linear alternate infinite;
-}
-
-@keyframes dash {
-  from {
-    stroke-dashoffset: 1000;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-/* Footer
--------------------------------------------------- */
-.footer {
-  float: left;
-  position: relative;
-  padding: 1em 0 6em;
-  font-size: .8em;
-}  @
-/*@ media queries
-----------------------------------------*/
-@media screen and (max-width: 81rem){
-    .main{
-      width: 100%;
-    }
-    .project-overview h3, .project-overview h4 {
-    font-size: 4rem;
-    line-height: 4.9rem;
+h3 {
+    font-size: 1.7rem;
+    line-height: 1.5em;
+    font-weight: 400;
+    margin-bottom: .8em;
     word-wrap: break-word;
     word-break: break-all;
     white-space: normal;
-  }
 }
 
+h4 {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    margin-bottom: .8em;
+    word-wrap: break-word;
+    word-break: break-all;
+    white-space: normal;
+}
 
-@media (max-width: 45rem){
-  body{
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .header{
-    width: 100%;
-  }
-  .main{
-    width:100%;
-  }
-  .menu{
-   width: 92%;
-   min-width: 28rem;
-   margin: 0 1rem 4rem 1rem;
-
-  }
-  .menu a {
+h5 {
     font-size: 1.4rem;
-  }
-  .project-overview{
-    width: 95%;
-    margin: 0 1rem 4rem 1rem;
-  }
-  .project-overview h3, .project-overview h4 {
-    font-size: 3.8rem;
-    line-height: 4.3rem;
-  }
-  .project-detail{
-    display: none;
-    margin-left:1rem;
-    margin-right: 1rem;
-    padding-left: 0;
-  }
-  .project-image img{
-  margin-left: auto;
-  margin-right: auto;
-
+    font-weight: 400;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
 }
-  .arrow{
-    display:inherit;
+
+h6 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: .3rem;
+    text-transform: uppercase;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    border: 0 !important;
+    text-decoration: none !important;
+}
+p>a{
+  color:black;
+  text-decoration: underline;
+}
+
+p> a:hover{
+  font-style: italic;
+}
+a:visited {
+    color: black;
+}
+
+p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+}
+a{
+  color:black;
+  text-decoration: none;
+}
+
+
+/* Project teaser
+-------------------------------------------------- */
+.container{
+    position: relative;
+    width: 100%;
+}
+
+.project-overview {
     position: fixed;
-    width: 25%;
-    top: 30rem;
-    left: 40%;
-    z-index: 200;
-  }
-  .heart-icon{
-    width: 1.4rem;
-  }
+    width: 45%;
+    height: 100%;
+    margin-bottom: 15rem;
+    padding-right: 4rem;
+    padding-bottom: 15rem;
+    list-style: none;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.teaser:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.teaser-project {
+    float: left;
+    list-style: none;
+    position: relative;
+    display: block;
+    float: left;
+    width: 90%;
+    margin: 5px;
+    padding-bottom: 3rem;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.teaser-project h3 {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 4.8rem;
+    line-height: 5.3rem;
+    font-weight: 400;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-bottom: .3rem;
+}
+
+.teaser-project h4 {
+    display: inline-block;
+    position: relative;
+    z-index: 100;
+    font-size: 4.8rem;
+    line-height: 5.3rem;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.teaser-project:hover > h3 {
+    font-style: italic;
+}
+
+.teaser-project li> a {
+    display: inline-block;
+    height: 100%;
+}
+
+.is-checked img {
+    display: none;
+}
+
+.is-checked >h3 {
+    font-style: italic;
 }
 
 
+/* Project Detail
+-------------------------------------------------- */
+
+.project-detail {
+    float: right;
+    width: 55%;
+    height: 100%;
+    max-height: 75rem;
+    top: 0;
+    padding-right: 0.5rem;
+    padding-left: 3rem;
+    margin-bottom: 50rem;
+  }
+
+
+.project-detail p {
+    float: left;
+    margin-top: 0;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    letter-spacing: 0.04em;
+}
+/*.project-image{ 
+    overflow-y: scroll;
+    overflow-x: hidden;
+}*/
+
+
+.project-image img {
+    margin: 0 auto 3rem auto;
+    max-width: 100%;
+    max-height: 70rem;
+
+}
+
+.video {
+   padding-bottom:2rem;
+   width: 100%;
+}
+
+.arrow {
+    display: none;
+}
+
+
+/* Modal
+-------------------------------------------------- */
+
+.blocker {
+    position: fixed;
+    top: 8rem;
+    left: 0;
+    width: auto;
+    height: 100%;
+    overflow: auto;
+    z-index: 1;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.blocker:before {
+    top: 0;
+    content: "";
+    height: 100%;
+}
+
+.modal {
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    max-width: 100%;
+    max-height: 100%;
+    padding-left: 3.5rem;
+    box-sizing: border-box;
+    text-align: left;
+    overflow-x: hidden;
+    margin-bottom: 11rem;
+}
+
+.modal a.close-modal {
+    position: absolute;
+    top: 1rem;
+    right: 1.2rem;
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    text-indent: -9999px;
+    fill:black;
+  }
+
+.modal a.close-modal>svg {
+  fill: black;
+  stroke: black;
+   stroke-width:3;
+}
+.about {
+    top: 1rem;
+    max-width: 70rem;
+    margin-bottom: 3rem;
+    margin-right: 5rem;
+}
+
+.cv {
+    float: left;
+    padding-right: 4rem;
+    padding-top: 4rem;
+}
+
+
+/* Animation
+-------------------------------------------------- */
+
+.path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 5s linear alternate infinite;
+}
+
+@keyframes dash {
+    from {
+        stroke-dashoffset: 1000;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+
+/* Footer
+-------------------------------------------------- */
+
+.footer {
+    float: left;
+    position: relative;
+    padding: 1em 0 6em;
+    font-size: .8em;
+}
+
+@
+/*@ media queries
+----------------------------------------*/
+
+@media screen and (max-width: 81rem) {
+    .main {
+        width: 100%;
+    }
+    .project-overview h3,
+    .project-overview h4 {
+        font-size: 4rem;
+        line-height: 4.9rem;
+        word-wrap: break-word;
+        word-break: break-all;
+        white-space: normal;
+    }
+}
+
+@media (max-width: 45rem) {
+    body {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .main {
+        width: 100%;
+    }
+
+    .menu {
+        width: 90%;
+        min-width: 28rem;
+        margin: 0 1rem 4rem 1rem;
+    }
+    .menu a {
+        font-size: 1.4rem;
+    }
+    .project-overview {
+        width: 95%;
+        margin: 0 1rem 4rem 1rem;
+    }
+    .project-overview h3,
+    .project-overview h4 {
+        font-size: 3.8rem;
+        line-height: 4.3rem;
+    }
+    .project-detail {
+        display: none;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding-left: 0;
+    }
+    .project-image img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .arrow {
+        background-color: transparent;
+        display: inherit;
+        position: fixed;
+        width: 25%;
+        top: 30rem;
+        left: 40%;
+        z-index: 500;
+        fill: none;
+        stroke:inherit;
+        stroke-width:3;
+    }
+    .heart-icon {
+        width: 1.4rem;
+    }
+}
